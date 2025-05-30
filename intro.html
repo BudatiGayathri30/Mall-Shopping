@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Holistic Health</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <div class="slider-container">
+        <!-- First Intro Slide -->
+        <div class="slide active" id="slide1">
+            <div class="content">
+                <div class="icon-container">
+                    <i class="fas fa-heart-pulse pulse"></i>
+                </div>
+                <h1 class="slide-in">Holistic Health Solutions</h1>
+                <p class="fade-in">"The natural healing force within each one of us is the greatest force in getting well."</p>
+                <p class="author fade-in">- Hippocrates</p>
+                <button class="next-btn bounce" onclick="showNext()">Next <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Second Intro Slide -->
+        <div class="slide" id="slide2">
+            <div class="content">
+                <div class="icon-grid">
+                    <div class="icon-box rotate-in">
+                        <i class="fas fa-pills"></i>
+                        <span>Modern Medicine</span>
+                    </div>
+                    <div class="icon-box rotate-in">
+                        <i class="fas fa-leaf"></i>
+                        <span>Ayurveda</span>
+                    </div>
+                    <div class="icon-box rotate-in">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Balance</span>
+                    </div>
+                    <div class="icon-box rotate-in">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Care</span>
+                    </div>
+                </div>
+                <p class="quote fade-in">"The art of healing comes from nature, not from the physician."</p>
+                <p class="author fade-in">- Paracelsus</p>
+                <button class="start-btn bounce" onclick="window.location.href='index.html'">Start Consultation <i class="fas fa-stethoscope"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showNext() {
+            document.getElementById('slide1').classList.remove('active');
+            document.getElementById('slide2').classList.add('active');
+        }
+    </script>
+</body>
+</html>
