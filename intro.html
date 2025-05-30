@@ -8,48 +8,73 @@
     <link rel="stylesheet" href="intro.css">
 </head>
 <body>
+    <div class="particles"></div>
     <div class="slider-container">
         <!-- First Intro Slide -->
         <div class="slide active" id="slide1">
             <div class="content">
-                <div class="icon-container">
-                    <i class="fas fa-spa pulse"></i>
+                <div class="hero-section">
+                    <div class="hero-text">
+                        <h1>Holistic Health</h1>
+                        <p class="tagline">Ancient Wisdom Meets Modern Medicine</p>
+                        <div class="icon-strip">
+                            <div class="icon-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Natural</span>
+                            </div>
+                            <div class="icon-item">
+                                <i class="fas fa-pills"></i>
+                                <span>Modern</span>
+                            </div>
+                            <div class="icon-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Caring</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-circles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
                 </div>
-                <h1 class="slide-in">Your Journey to Wellness</h1>
-                <p class="fade-in">"Health is not just about what you're eating. It's also about what you're thinking and saying."</p>
-                <div class="icon-row fade-in">
-                    <i class="fas fa-heartbeat"></i>
-                    <i class="fas fa-brain"></i>
-                    <i class="fas fa-peace"></i>
-                </div>
-                <button class="next-btn bounce" onclick="showNext()">Discover More <i class="fas fa-arrow-right"></i></button>
+                <button class="next-btn" onclick="showNext()">
+                    Explore <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
 
         <!-- Second Intro Slide -->
         <div class="slide" id="slide2">
             <div class="content">
-                <div class="feature-grid">
-                    <div class="feature-box rotate-in">
+                <div class="features-grid">
+                    <div class="feature-card">
                         <i class="fas fa-stethoscope"></i>
-                        <span>Expert Diagnosis</span>
+                        <h3>Expert Diagnosis</h3>
+                        <p>Professional health assessment</p>
                     </div>
-                    <div class="feature-box rotate-in">
+                    <div class="feature-card">
                         <i class="fas fa-mortar-pestle"></i>
-                        <span>Natural Remedies</span>
+                        <h3>Ayurvedic Care</h3>
+                        <p>Traditional healing methods</p>
                     </div>
-                    <div class="feature-box rotate-in">
-                        <i class="fas fa-clinic-medical"></i>
-                        <span>Modern Medicine</span>
+                    <div class="feature-card">
+                        <i class="fas fa-capsules"></i>
+                        <h3>Modern Medicine</h3>
+                        <p>Contemporary treatments</p>
                     </div>
-                    <div class="feature-box rotate-in">
-                        <i class="fas fa-om"></i>
-                        <span>Holistic Care</span>
+                    <div class="feature-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Personalized Care</h3>
+                        <p>Tailored to your needs</p>
                     </div>
                 </div>
-                <p class="quote fade-in">"The greatest wealth is health."</p>
-                <p class="author fade-in">- Ancient Wisdom</p>
-                <button class="start-btn bounce" onclick="window.location.href='index.html'">Begin Your Health Journey <i class="fas fa-door-open"></i></button>
+                <div class="cta-section">
+                    <p class="quote">"The natural healing force within each one of us is the greatest force in getting well."</p>
+                    <button class="start-btn" onclick="window.location.href='index.html'">
+                        Start Your Journey <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -58,6 +83,18 @@
         function showNext() {
             document.getElementById('slide1').classList.remove('active');
             document.getElementById('slide2').classList.add('active');
+        }
+
+        // Create floating particles
+        const particles = document.querySelector('.particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particles.appendChild(particle);
+            
+            // Random position and animation delay
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 5 + 's';
         }
     </script>
 </body>
