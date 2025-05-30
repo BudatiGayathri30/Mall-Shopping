@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holistic Health Consultation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <!-- First Slide -->
+        <div class="slide active" id="symptoms">
+            <div class="content">
+                <h1><i class="fas fa-heartbeat"></i> Health Consultation</h1>
+                <div class="symptom-grid">
+                    <div class="symptom-card">
+                        <i class="fas fa-head-side-cough"></i>
+                        <label>
+                            <input type="checkbox" name="symptoms" value="cough">
+                            Cough
+                        </label>
+                    </div>
+                    <div class="symptom-card">
+                        <i class="fas fa-temperature-high"></i>
+                        <label>
+                            <input type="checkbox" name="symptoms" value="fever">
+                            Fever
+                        </label>
+                    </div>
+                    <div class="symptom-card">
+                        <i class="fas fa-head-side-virus"></i>
+                        <label>
+                            <input type="checkbox" name="symptoms" value="headache">
+                            Headache
+                        </label>
+                    </div>
+                    <div class="symptom-card">
+                        <i class="fas fa-bone"></i>
+                        <label>
+                            <input type="checkbox" name="symptoms" value="joint-pain">
+                            Joint Pain
+                        </label>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="showNext()">Get Recommendations <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="slide" id="recommendations">
+            <div class="content">
+                <h1><i class="fas fa-clinic-medical"></i> Treatment Recommendations</h1>
+                <div class="treatment-container">
+                    <div class="treatment-box allopathy">
+                        <h2><i class="fas fa-pills"></i> Allopathic Treatment</h2>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Consult a General Physician</li>
+                            <li><i class="fas fa-check-circle"></i> Take prescribed antibiotics</li>
+                            <li><i class="fas fa-check-circle"></i> Use pain relievers if needed</li>
+                            <li><i class="fas fa-check-circle"></i> Get adequate rest</li>
+                        </ul>
+                    </div>
+                    <div class="treatment-box ayurveda">
+                        <h2><i class="fas fa-leaf"></i> Ayurvedic Treatment</h2>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Take Tulsi and Ginger tea</li>
+                            <li><i class="fas fa-check-circle"></i> Apply warm sesame oil</li>
+                            <li><i class="fas fa-check-circle"></i> Practice pranayama</li>
+                            <li><i class="fas fa-check-circle"></i> Follow dosha-specific diet</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="showPrevious()"><i class="fas fa-arrow-left"></i> Check Other Symptoms</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showNext() {
+            document.getElementById('symptoms').classList.remove('active');
+            document.getElementById('recommendations').classList.add('active');
+        }
+
+        function showPrevious() {
+            document.getElementById('recommendations').classList.remove('active');
+            document.getElementById('symptoms').classList.add('active');
+        }
+    </script>
+</body>
+</html>
