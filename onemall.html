@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>One Shopping Mall</title>
+    <style>
+    body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url("Shoppimh.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #d9b3ff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 8px 16px;
+}
+
+.navbar a:hover {
+    background-color: #77cdfd;
+    color: white;
+
+}
+
+.navbar .logo {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.offers {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.offers h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: #333;
+}
+
+.offers h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 6px;
+    margin-top: 10px;
+}
+
+.offers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.offers ul li {
+    margin: 12px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.offers p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.map-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #575fcf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.map-button:hover {
+    background-color: #4838b4;
+}
+
+.mall-image {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.mall-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.footer {
+            position: absolute; 
+            bottom: 0;
+            width: 90%;
+            text-align: center; 
+            background-color: none; 
+            padding: 10px; 
+            font-size: 14px; 
+      }
+
+.fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: bottom;
+            text-decoration: none;
+       }
+
+       .fa:hover {
+           opacity: 0.7;
+       }
+
+       .fa-facebook {
+           background: #3B5998;
+           align: bottom;
+           color: white;
+       }
+
+       .fa-twitter {
+           background: #55ACEE;
+           align: bottom;
+           color: white;
+      }
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+       <img src="G LETTERS MALL.JPG" alt="Logo" class="logo">
+        <a href="mall.html" class="home-button">Home</a>
+        <a href="location.html" class="location-button">Location</a>
+        <a href="aboutus.html" class="aboutus-button">About Us</a>
+        <a href="contact.html" class="contact-button">Contact us</a>
+        <a href="help.html" class="help-button">Help</a>
+        <a href="mall.html" class="logout-button">Logout</a>      
+    </div>
+    <div class="container">
+        <div class="offers">
+            <h2>Latest Offers.....</h2>
+            <h3>Womens</h3>
+            <ul>
+                <li>Flat 70% off on cotton sarees.</li>
+                <li>Buy 2 worth ₹1499, Get off up to ₹750</li>
+            </ul>
+            <h3>Mens</h3>
+            <ul>
+                <li>Flat 50% discount on buying ₹2999</li>
+            </ul>
+            <p><strong>Location:</strong></p>
+            <a href="https://www.google.com/maps/search/?api=1&query=One++Shopping+Mall,+Opposite+Public+Garden,+Kishanpura,+Hanamkonda,+Telangana,+506001" target="_blank" class="map-button">View on Map</a>
+        </div>
+        
+        <div class="mall-image">
+            <img src="1shp.jpeg" alt="One Shopping Mall">
+        </div>
+        </div>
+       <div class="footer">
+        <p>Copyright ©2024 @Mall Shopping</p>
+	   </div>
+</body>
+</html>

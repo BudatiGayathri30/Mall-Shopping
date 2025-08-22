@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mall Shopping</title>
+    <style>
+    body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url("Shoppimh.jpg");
+    background-size: cover;    
+}
+
+.navbar {
+  background-color: #d9b3ff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.navbar .logo {
+  width: 30px;
+  margin-right:20px;
+}
+
+.navbar .home-button {
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 8px 16px;
+    
+}
+
+.navbar .home-button:hover {
+    background-color: #77cdfd;
+    color: white;
+}
+
+.navbar .location-button {
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 8px 16px;
+    
+}
+
+.navbar .location-button:hover {
+    background-color: #77cdfd;
+    color: white;
+}
+
+.navbar .menu-button {
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 8px 16px;
+}
+
+.navbar .menu-button:hover {
+    background-color: #77cdfd;
+    color: white;
+}
+
+.navbar .contact-button {
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 8px 16px;
+    
+}
+
+.navbar .contact-button:hover {
+    background-color: #77cdfd;
+    color: white;
+}
+
+.navbar .back-button {
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 8px 16px;
+    
+}
+
+.navbar .back-button:hover {
+    background-color: #77cdfd;
+    color: white;
+}
+
+.navbar .logout-button {
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 8px 16px;
+    
+}
+
+.navbar .logout-button:hover {
+    background-color: #77cdfd;
+    color: white;
+}
+
+
+.navbar .logo {
+    width: 30px;
+    height: 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 50px;
+    border: 2px solid #e8d7fc;
+    width: 93%;
+    text-align: center;
+    font-size:30px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #000;
+}
+
+.mall-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mall-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.mall-list li .arrow {
+    color: #333;
+    margin-right: 10px;
+}
+
+.mall-list a {
+    color: #5bc0de;
+    text-decoration: none;
+}
+
+.mall-list a:hover {
+    text-decoration: underline;
+}
+
+.logout-button {
+    padding: 8px 15px;
+    background-color: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #333;
+}
+.footer {
+            position: absolute; 
+            bottom: 0;
+            width: 90%;
+            text-align: center; 
+            background-color: none; 
+            padding: 10px; 
+            font-size: 14px; 
+      }
+
+.fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+       }
+
+       .fa:hover {
+           opacity: 0.7;
+       }
+
+       .fa-facebook {
+           background: #3B5998;
+           color: white;
+       }
+
+       .fa-twitter {
+           background: #55ACEE;
+           color: white;
+      }
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="G LETTERS MALL.JPG" alt="Logo" class="logo">
+        <a href="mall.html" class="home-button">Home</a>
+        <a href="location.html" class="location-button">Warangal</a>
+        <a href="menu.html" class="menu-button">Malls</a>
+        <a href="contact.html" class="contact-button">Contact Us</a>
+        <a href="location.html" class="back-button">Back</a>
+        <a href="mall.html" class="logout-button">Logout</a>
+    </div>
+
+    <div class="content">
+        <h2>Malls Located In vijayawada</h2>
+        <div class="mall-list">
+            <span class="arrow">&#9658;</span> <a href="southmall2.html">South Indian Shopping Mall</a><br></br>
+            <span class="arrow">&#9658;</span> <a href="onemall2.html">One Shopping Mall</a><br></br>
+            <span class="arrow">&#9658;</span> <a href="chennai2.html">Chennai Shopping Mall</a><br></br>
+            <span class="arrow">&#9658;</span> <a href="cmr2.html">CMR Shopping Mall</a><br></br>
+        </div>
+    </div>
+       <div class="footer">
+        <p>Copyright ©2024 @Mall Shopping</p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+   </div>
+</body>
+</html>
