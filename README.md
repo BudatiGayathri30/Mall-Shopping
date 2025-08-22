@@ -26,7 +26,7 @@ The platform enhances shopping experiences through **real-time recommendations**
 ## 📂 Project Structure
 ```bash
 mall-shopping-platform/
-│── lohin.html        # Main HTML page
+│── login.html        # Main HTML page
 │── style.css         # Stylesheet
 │── script.js         # JavaScript functionality
 │── assets/           # Images, icons, and static files
